@@ -2,6 +2,8 @@ package com.test;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
@@ -10,7 +12,17 @@ import java.util.concurrent.LinkedBlockingQueue;
 /**
  * Created by pc on 2016-08-18.
  */
-public class Father {
+public class Father<T> {
+
+    private T per;
+    public Father(T t){
+        this.per=t;
+    }
+
+    public Father(){
+
+    }
+
     private String xx;
 
 
@@ -23,7 +35,8 @@ public class Father {
     }
 
     public static void main(String[] args) {
-        Stack s=new Stack();
+       List<Integer> intl=new ArrayList<Integer>();
+        intl.add(1);
     }
 
     @Test
