@@ -5,6 +5,8 @@
 
 
              <bean id="myTestBean"  class="com.test.MyTestBean"  />
-             <bean id ="factoryTest" class="com.test.bean" />
+             <bean id ="factoryTest" class="com.test.beanTest.FactoryTest" factory-method="getInstance" >
+
+             </bean>
 
 </beans>

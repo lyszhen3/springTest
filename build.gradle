@@ -3,7 +3,7 @@ buildscript {
 		springBootVersion = '1.4.0.RELEASE'
 	}
 	repositories {
-		mavenCentral()
+		maven{url"http://maven.aliyun.com/nexus/content/groups/public"}//这里试用阿里的maven仓库
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
